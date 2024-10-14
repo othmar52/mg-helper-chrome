@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ModularGrid Zusatzfunktion",
+  "version": "1.0",
+  "description": "Erweitert das Dropdown-Menü auf modulargrid.net",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+"matches": [
+  "*://*.modulargrid.net/*",
+  "*://*.modulargrid.com/*"
+],
+      "js": ["content.js"]
+    }
+  ]
+}
